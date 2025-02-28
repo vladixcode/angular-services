@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms'
 export class NewTaskComponent {
   private formEl = viewChild<ElementRef<HTMLFormElement>>('form')
 
-  // onAddTask(title: string, description: string) {
-  //   this.formEl()?.nativeElement.reset()
-  // }
+  onAddTask(title: string, description: string) {
+    console.log(title, description)
+    this.formEl()?.nativeElement.reset()
+  }
 }
