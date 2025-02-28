@@ -1,0 +1,35 @@
+# Similar to .gitignore
+
+.DS_STORE
+
+/dist/
+/bazel-out
+/integration/bazel/bazel-*
+*.log
+node_modules/
+modules/ssr-benchmarks/node_modules/
+build
+coverage
+e2e
+
+# Don't check in secret files
+*secret.js
+
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
+
+# Ignore cache created with the Angular CLI.
+.angular/
+
+# build-analytics
+.build-analytics
+
+# Editor directories and files
+.vscode/*
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
